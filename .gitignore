@@ -1,0 +1,15 @@
+**/.terraform/*
+**/*.tfstate*
+**/*.tfplan
+**/crash.log
+**/terraform.tfvars
+**/*.auto.tfvars
+**/backend.hcl
+**/*.local.json
+.env*
+*.pem
+*.key
+*.pfx
+*.p12
+.DS_Store
+**/terraform.tfvars.json
