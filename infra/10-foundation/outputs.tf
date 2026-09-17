@@ -1,0 +1,16 @@
+output "workspace_url" { value = "https://${azurerm_databricks_workspace.main.workspace_url}" }
+output "workspace_resource_id" { value = azurerm_databricks_workspace.main.id }
+output "workspace_id" { value = azurerm_databricks_workspace.main.workspace_id }
+output "access_connector_id" { value = azurerm_databricks_access_connector.uc.id }
+output "lake_name" { value = azurerm_storage_account.lake.name }
+output "lake_id" { value = azurerm_storage_account.lake.id }
+output "key_vault_id" { value = azurerm_key_vault.apps.id }
+output "key_vault_name" { value = azurerm_key_vault.apps.name }
+output "hub_vnet_id" { value = azurerm_virtual_network.hub.id }
+output "hub_vnet_name" { value = azurerm_virtual_network.hub.name }
+output "resource_group_name" { value = azurerm_resource_group.main.name }
+output "log_analytics_id" { value = azurerm_log_analytics_workspace.main.id }
+output "dns_inbound_ip" { value = azurerm_private_dns_resolver_inbound_endpoint.main.ip_configurations[0].private_ip_address }
+output "runner_subnet_id" { value = azurerm_subnet.hub["runner"].id }
+output "data_vnet_id" { value = azurerm_virtual_network.data.id }
+output "data_vnet_name" { value = azurerm_virtual_network.data.name }

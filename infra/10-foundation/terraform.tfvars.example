@@ -1,0 +1,5 @@
+subscription_id = "REPLACE_SUBSCRIPTION_UUID"
+environment = "dev"
+location = "eastus2"
+location_short = "eus2"
+suffix = "x7k92"

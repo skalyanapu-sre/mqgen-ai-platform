@@ -1,0 +1,5 @@
+resource_group_name = "rg-mqgen-ai-dev-eus2-tfstate"
+storage_account_name = "REPLACE_STATE_ACCOUNT"
+container_name = "tfstate"
+key = "dev/10-foundation.tfstate"
+use_azuread_auth = true
