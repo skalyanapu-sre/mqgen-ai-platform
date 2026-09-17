@@ -18,6 +18,9 @@ resource "azurerm_databricks_workspace" "main" {
   depends_on = [azurerm_subnet_nat_gateway_association.db]
 }
 resource "azurerm_databricks_workspace" "auth" {
+  depends_on = [
+    azurerm_databricks_workspace.main
+  ]
   name                                  = "dbw-${local.prefix}-web-auth"
   resource_group_name                   = azurerm_resource_group.main.name
   location                              = var.location
